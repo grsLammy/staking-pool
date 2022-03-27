@@ -8,9 +8,9 @@ import {
 
 async function main() {
 
-    // MockTokenERC20.sol Deploy
+    // ERC20TokenFee.sol Deploy
     const ERC20TokenFeeFactory = (await ethers.getContractFactory(
-        "MockTokenERC20"
+        "ERC20TokenFee"
     )) as ERC20TokenFee__factory;
 
     const ERC20Token = (await ERC20TokenFeeFactory.deploy()) as ERC20TokenFee;
